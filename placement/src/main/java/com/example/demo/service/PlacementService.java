@@ -45,4 +45,11 @@ public class PlacementService {
 
 	    return prepo.save(p1);
 	}
+	
+	//Is present or not
+	public Placement getPlacementById(Long id) {
+
+	    return prepo.findById(id).orElse(null);
+
+	}
 }
